@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="content">
+      <div class="person">
+        <div class="report">
+          <img src="/largeProjects/timeTrackingDashboard/images/image-jeremy.png" alt="">
+          <div class="report__text">
+            <p>Report for</p>
+            <h3>Jeremy Robson</h3>
+          </div>
+        </div>
+        <div class="periods">
+          <p id="daily">Daily</p>
+          <p id="weekly">Weekly</p>
+          <p id="monthly">Monthly</p>
+        </div>
+      </div>
+      <div class="time">
+        <div class="left-grid">
+        <div class="item work">
+          <div class="svg">
+            <img src="/largeProjects/timeTrackingDashboard/images/icon-work.svg" alt="">
+          </div>
+          <div class="item textArea">
+            <div class="left-side">
+              <h3>Work</h3>
+              <h1 id="weeklyWork">32hrs</h1>
+            </div>
+            <div class="right-side">
+              <div class="meatball-menu">
+                <span></span><span></span><span></span>
+              </div>
+              <p id="weeklyWorkPrevious" class="timeP">Last week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="item play">
+          <div class="svg">
+            <img src="/largeProjects/timeTrackingDashboard/images/icon-play.svg" alt="">
+          </div>
+          <div class="item textArea">
+            <div class="left-side">
+              <h3>Play</h3>
+              <h1 id="weeklyPlay">10hrs</h1>
+            </div>
+            <div class="right-side">
+              <div class="meatball-menu">
+                <span></span><span></span><span></span>
+              </div>
+              <p id="weeklyPlayPrevious" class="timeP">Last week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="item study">
+          <div class="svg">
+            <img src="/largeProjects/timeTrackingDashboard/images/icon-study.svg" alt="">
+          </div>
+          <div class="item textArea">
+            <div class="left-side">
+              <h3>Study</h3>
+              <h1 id="weeklyStudy">4hrs</h1>
+            </div>
+            <div class="right-side">
+              <div class="meatball-menu">
+                <span></span><span></span><span></span>
+              </div>
+              <p id="weeklyStudyPrevious" class="timeP">Last week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="right-grid">
+        <div class="item exercise">
+          <div class="svg">
+            <img src="/largeProjects/timeTrackingDashboard/images/icon-exercise.svg" alt="">
+          </div>
+          <div class="item textArea">
+            <div class="left-side">
+              <h3>Exercise</h3>
+              <h1 id="weeklyExercise">4hrs</h1>
+            </div>
+            <div class="right-side">
+              <div class="meatball-menu">
+                <span></span><span></span><span></span>
+              </div>
+              <p id="weeklyExercisePrevious" class="timeP">Last week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="item social">
+          <div class="svg">
+            <img src="/largeProjects/timeTrackingDashboard/images/icon-social.svg" alt="">
+          </div>
+          <div class="item textArea">
+            <div class="left-side">
+              <h3>Social</h3>
+              <h1 id="weeklySocial">5hrs</h1>
+            </div>
+            <div class="right-side">
+              <div class="meatball-menu">
+                <span></span><span></span><span></span>
+              </div>
+              <p id="weeklySocialPrevious" class="timeP">Last week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="item selfCare">
+          <div class="svg">
+            <img src="/largeProjects/timeTrackingDashboard/images/icon-self-care.svg" alt="">
+          </div>
+          <div class="item textArea">
+            <div class="left-side">
+              <h3>Self-Care</h3>
+              <h1 id="weeklySelfCare">2hrs</h1>
+            </div>
+            <div class="right-side">
+              <div class="meatball-menu">
+                <span></span><span></span><span></span>
+              </div>
+              <p id="weeklySelfCarePrevious" class="timeP">Last week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+<script src="/largeProjects/timeTrackingDashboard/index.js"></script>
+</body>
+</html>

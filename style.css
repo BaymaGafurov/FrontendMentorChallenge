@@ -1,0 +1,331 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Rubik, sans-serif;
+  background: var(--veryDarkBlue);
+}
+
+:root {
+  /* Primary Colors */
+  --blue: hsl(246, 80%, 60%);
+  --work: hsl(15, 100%, 70%);
+  --play: hsl(195, 74%, 62%);
+  --study: hsl(348, 100%, 68%);
+  --exercise: hsl(145, 58%, 55%);
+  --social: hsl(264, 64%, 52%);
+  --selfCare: hsl(43, 84%, 65%);
+
+  /* Neutral colors */
+  --veryDarkBlue: hsl(226, 43%, 10%);
+  --darkBlue: hsl(235, 46%, 20%);
+  --desaturatedBlue: hsl(235, 45%, 61%);
+  --paleBlue: hsl(236, 100%, 87%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Paddings */
+  --paddingContainer: 4rem 2.2rem;
+  --marginTop: 1.5rem;
+  --marginBottom: 1.5;
+
+  /* Border-radius */
+  --border: 0.8rem;
+}
+
+h1,h2,h3,h4 {
+  margin-top: 0;
+  color: var(--white);
+  font-weight: 400;
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+h1 {
+    font-size: 1.65;
+}
+
+
+p {
+  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--paleBlue);
+  transition: color 250ms ease;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content > * {
+  border-radius: var(--border);
+}
+
+.person {
+  display: flex;
+  flex-direction: column-reverse;
+  background: var(--darkBlue);
+  height: 12rem;
+}
+
+.person > * {
+  border-radius: var(--border);
+}
+
+.person .report {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+  height: 70%;
+  background: var(--blue);
+}
+
+.person .report__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 1.125rem;
+  line-height: 1;
+  margin: 0 0.6rem;
+}
+
+.person .report p {
+  font-size: 0.85rem;
+}
+
+.person .report img {
+  width: 4.3rem;
+  height: 4.3rem;
+  margin-left: 1.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+}
+
+.person .periods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 30%;
+  font-weight: 500;
+}
+
+.content .person .periods p {
+  font-size: 1rem;
+  transition: color 250ms ease;
+}
+
+p:hover, p:active {
+  color: var(--white);
+}
+
+.content .time {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--marginBottom);
+}
+
+.content .time > * {
+  border-radius: var(--border);
+}
+
+.content .time .item {
+  border-radius: var(--border);
+  height: 12.5rem;
+  margin-top: var(--marginTop);
+  margin-bottom: var(--marginBottom);
+  max-height: 80%;
+  overflow: hidden;
+}
+
+.item .textArea {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background: var(--darkBlue) !important;
+  border-radius: var(--border);
+}
+
+.item .left-side {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+
+.item .right-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+.item .timeP {
+  margin-top: 3.5rem;
+  text-align: right;
+}
+
+.content .time .item .svg {
+  display: flex;
+  flex-direction: row-reverse;
+  border-top-left-radius: var(--border);
+  border-top-right-radius: var(--border);
+  position: relative;
+  width: 100%;
+  margin-bottom: -2rem;
+  max-height: 40%;
+}
+
+.work {
+  background: var(--work);
+}
+
+.item .meatball-menu {
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  position: relative;
+  margin-top: -2.5rem;
+  margin-right: 3.2rem;
+  cursor: pointer;
+  top: 50%;
+  left: 70%;
+}
+.meatball-menu span {
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+}
+.meatball-menu span:nth-child(1) {
+  top: 35%;
+  left: 0%;
+  transition: 0.6s;
+}
+.meatball-menu span:nth-child(2) {
+  top: 35%;
+  left: 100%;
+}
+.meatball-menu span:nth-child(3) {
+  top: 35%;
+  left: 200%;
+}
+
+.play {
+  background-color: var(--play);
+}
+
+.study {
+  background-color: var(--study);
+}
+
+.exercise {
+  background-color: var(--exercise);
+}
+
+.social {
+  background-color: var(--social);
+}
+
+.selfCare {
+  background-color: var(--selfCare);
+}
+
+@media only screen and (min-width: 57em) {
+    .main-container {
+      max-height: 100vh;
+      max-width: 100vw;
+    }  
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr 2fr);
+        grid-template-rows: repeat(1, auto);
+        justify-content: center;
+        margin: 2rem 0 2rem 12rem;
+        align-items: stretch;
+        gap: 1rem;
+        max-width: 70vw;
+        max-height: 70vh;
+        overflow: visible;
+    }
+
+    .content .person {
+        height: 83vh;
+        margin-top: 1.5rem;
+    }
+
+    .content .person .report {
+      height: 75%;
+    }
+
+    .content .person .periods {
+      flex-direction: column;
+    }
+     
+    .content .time {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .content .time .item{
+      max-height: 25vh;
+
+    }
+
+    .content .time .item .textArea {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+
+    .content .time .item .textArea .right-side, .left-side {
+      margin: 0.5rem;
+      padding: 0;
+    }
+
+    .content .time .item .svg{
+      max-height: 9vh;
+    }
+
+    .item .textArea {
+      padding: 0;
+    }
+
+    .item.textArea p {
+      margin-top: 2.3rem;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    .item .meatball-menu {
+      width: 0.5rem;
+      height: 0.5rem;
+      position: relative;
+      margin-top: -1.5rem;
+      margin-right: 3.2rem;
+    }
+    .item .textArea p{
+      margin-top: 3.2rem;
+    }
+
+}
